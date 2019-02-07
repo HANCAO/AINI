@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="blue">#a593fa</color>
+    <color name="colorPrimary">#f48eb7</color>
+    <color name="color_green">#0aef2c</color>
+    <color name="white">#f1ecec</color>
+    <color name="titleBackground">#f177ac</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorInActive">#f2dde5</color>
+    <color name="colorBarBg">#e13b43</color>
+
+    <color name="colorBike">#D8BFD8</color>
+    <color name="colorUnBike">#EE82EE</color>
+    <color name="colorRun">#BA55D3</color>
+    <color name="colorUnRun">#8A2BE2</color>
+    <color name="colorBus">#B0C4DE</color>
+    <color name="colorUnBus">#00BFFF</color>
+
+    <color name="mediaListBackground">#F1F1F1</color>
+</resources>

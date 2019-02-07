@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".MusicActivity">
+
+
+    <TextView
+        android:id="@+id/tVTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titleBackground"
+        android:gravity="center"
+        android:text="peacd and love"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/tVTitle"
+        app:srcCompat="@drawable/sunflower" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPlayMusic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="playMusic"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/niuniu" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@android:color/transparent"
+        android:text="播放"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonPlayMusic"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonPlayMusic"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonPlayMusic"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <ImageButton
+        android:id="@+id/imageButtonResetMusic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@android:color/transparent"
+        android:onClick="resetMusic"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonPauseMusic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonPauseMusic"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/yaya" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:text="重放"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonPauseMusic"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonResetMusic"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonPauseMusic"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPauseMusic"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/transparent"
+        android:onClick="pauseMusic"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonPlayMusic"
+        app:srcCompat="@drawable/catcat" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:text="暂停"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonResetMusic"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonPauseMusic"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonResetMusic"
+        app:layout_constraintVertical_bias="0.448" />
+</android.support.constraint.ConstraintLayout>
